@@ -141,6 +141,28 @@ class html {
 
 
     }
+public static function generateTable($cols,$rows) {
+
+
+
+
+
+        self::header();
+
+
+
+        self::col_tab($cols);
+
+
+
+        self::row_tab($rows);
+
+
+
+        self::footer();
+
+    }
+
 
 
 
