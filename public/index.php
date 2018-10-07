@@ -163,7 +163,30 @@ public static function generateTable($cols,$rows) {
 
     }
 
+public static function col_tab($cols){
 
+
+
+        foreach ($cols as $key => $value) {
+
+
+
+            self::table_header_tab($value);
+
+
+
+        }
+
+
+
+    }
+public static function table_header_tab($value){
+
+
+
+        echo "<th>".$value."</th>";
+
+    }
 
 
 
