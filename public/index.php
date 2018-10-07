@@ -349,7 +349,9 @@ class recordFactory {
 
 }
 
-
+/** This project includes implementation of DRY, OOP concept, static and object, table generation, TH AND TD generation,
+ *and generating the table with proper commits.
+ */
 
 
 ?>
