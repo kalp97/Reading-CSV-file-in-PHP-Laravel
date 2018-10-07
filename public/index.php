@@ -80,6 +80,67 @@ class table {
     }
 
 }
+class html {
+
+
+
+    public static function header(){
+
+
+
+        echo "<html>";
+
+        echo "<head>";
+
+        echo "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">";
+
+        echo "<style>";
+
+        echo ".table-condensed{
+
+         font-size: 30px;
+
+        }";
+
+        echo"</style>";
+
+        echo "</head>";
+
+        echo "<body>";
+
+        echo "<div class=\"container\">";
+
+        echo "<div class=\"table-responsive\">";
+
+        echo "<h1>CSV Reader</h1>";
+
+        echo "<table class = 'table table-condensed table-striped'>";
+
+    }
+
+
+
+
+
+    public  static function footer(){
+
+
+
+        echo "</table>";
+
+
+
+        echo "</div>";
+
+        echo "</div>";
+
+        echo "</body>";
+
+        echo "</html>";
+
+
+
+    }
 
 
 
