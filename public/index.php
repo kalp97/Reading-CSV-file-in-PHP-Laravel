@@ -80,12 +80,12 @@ class table {
     }
 
 }
-class html {
+class html
+{
 
 
-
-    public static function header(){
-
+    public static function header()
+    {
 
 
         echo "<html>";
@@ -102,7 +102,7 @@ class html {
 
         }";
 
-        echo"</style>";
+        echo "</style>";
 
         echo "</head>";
 
@@ -119,15 +119,11 @@ class html {
     }
 
 
-
-
-
-    public  static function footer(){
-
+    public static function footer()
+    {
 
 
         echo "</table>";
-
 
 
         echo "</div>";
@@ -139,54 +135,82 @@ class html {
         echo "</html>";
 
 
-
     }
-public static function generateTable($cols,$rows) {
 
-
-
+    public static function generateTable($cols, $rows)
+    {
 
 
         self::header();
 
 
-
         self::col_tab($cols);
 
 
-
         self::row_tab($rows);
-
 
 
         self::footer();
 
     }
 
-public static function col_tab($cols){
-
+    public static function col_tab($cols)
+    {
 
 
         foreach ($cols as $key => $value) {
 
 
-
             self::table_header_tab($value);
-
 
 
         }
 
 
+    }
+
+    public static function table_header_tab($value)
+    {
+
+
+        echo "<th>" . $value . "</th>";
 
     }
-public static function table_header_tab($value){
+
+    public static function row_tab($rows)
+    {
 
 
+        foreach ($rows as $key => $value) {
 
-        echo "<th>".$value."</th>";
+
+            echo "<tr>";
+
+
+            foreach ($value as $data) {
+
+
+                self::table_row_tab($data);
+
+
+            }
+
+            echo "</tr>";
+
+        }
 
     }
+
+
+    public static function table_row_tab($data)
+    {
+
+
+        echo "<td>" . $data . "</td>";
+
+    }
+
+}
 
 
 
